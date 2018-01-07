@@ -1,0 +1,18 @@
+{
+
+  "description": "Adds the kernel version at the time of a LWN posting as well as links to its tag on FreeElectrons' Elixir and Github",
+  "manifest_version": 2,
+  "name": "LWN kernelversion",
+  "version": "0.1",
+  "homepage_url": "https://github.com/a3f/WebExtension-LWN-kernelversion",
+  "icons": {
+    "70": "icons/LWN-kernelversion.png"
+  },
+  "web_accessible_resources": ["tags.json"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.lwn.net/*"],
+      "js": ["kernelversion.js"]
+    }
+  ]
+}
