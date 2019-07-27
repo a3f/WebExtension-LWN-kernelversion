@@ -31,7 +31,7 @@ function enhance(Byline, date) {
             el.style.color = "darkred";
             el.innerHTML = '<span title="' + new Date(time*1000) + '">' + tag + "</span> &mdash;";
             el.innerHTML += ' [<a href="https://github.com/torvalds/linux/tree/' + tag + '">Github</a>]';
-            el.innerHTML += ' [<a href="https://elixir.free-electrons.com/linux/' + tag + '/source">Elixir</a>]';
+            el.innerHTML += ' [<a href="https://elixir.bootlin.com/linux/' + tag + '/source">Elixir</a>]';
 
             Byline.insertBefore(el, null);
         }
